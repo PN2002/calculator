@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <main class="calculator">
+        <form method="post" name="form">
+            <div class="finalResult">
+                <input type="text" placeholder="0" name="finalResult" id="finalResult">
+            </div>
+            <div class="buttons">
+                <div class="row" id="first">
+                    <input type="button" value="7" name="keySeven" class="key" id="seven" onclick="display('7')">
+                    <input type="button" value="8" name="keyEight" class="key" onclick="display('8')">
+                    <input type="button" value="9" name="keyNine"  class="key" onclick="display('9')">
+                    <input type="button" value="+" name="keyPlus"  class="key" id="plus" onclick="display('+')">
+                </div>
+                <div class="row" id="second">
+                    <input type="button" value="4" name="keyFour" class="key" onclick="display('4')">
+                    <input type="button" value="5" name="keyFive" class="key" onclick="display('5')">
+                    <input type="button" value="6" name="keySix" class="key" onclick="display('6')">
+                    <input type="button" value="-" name="keyMinus" class="key" id="minus" onclick="display('-')">
+                </div>
+                <div class="row" id="third">
+                    <input type="button" value="1" name="keyOne" class="key" id="one" onclick="display('1')">
+                    <input type="button" value="2" name="keyTwo" class="key" onclick="display('2')">
+                    <input type="button" value="3" name="keyThree" class="key" onclick="display('3')">
+                    <input type="button" value="*" name="keyMultiply" class="key" id="multiply" onclick="display('*')">
+                </div>
+                <div class="row" id="third">
+                    <input type="button" value="0" name="keyZero" class="key" onclick="display('0')">
+                    <input type="button" value="." name="keyDot" class="key" id="dot" onclick="display('.')">
+                    <input type="button" value="/" name="keySlash" class="key" id="slash" onclick="display('/')">
+                    <input type="button" value="=" name="keyEqual" class="key" id="equal" onclick="calculate()">
+                </div>
+            </div>
+        </form>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>

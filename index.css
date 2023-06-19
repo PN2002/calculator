@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Righteous', cursive;
+    font-size: 1.3rem;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffedbf;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+main form .finalResult{
+    background-color: #ff7251;
+    padding: 2rem 2rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+main form .finalResult input{
+    border: none;
+    background-color: #ff7251;
+    text-align: right;
+    font-weight: 700;
+    color: black;
+}
+
+main form .finalResult input::placeholder{
+    color: black;
+}
+
+main form .finalResult input:focus{
+    outline: none;
+}
+
+main form .buttons{
+    padding: 1rem 0rem;
+    background-color: white;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+main form .buttons .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3rem 0rem;
+    gap: 1rem;
+}
+
+main form .buttons .row input{
+    background-color: #B2BEB5;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 0.6rem 1rem;
+    text-align: center;
+}
+
+main form .buttons .row #one{
+    padding: 0.6rem 1.2rem;
+}
+
+main form .buttons .row #dot{
+    padding: 0.6rem 1.2rem;
+}
+
+main form .buttons .row #seven{
+    padding: 0.6rem 1.1rem;
+}
+
+main form .buttons .row #plus{
+    padding: 0.6rem 1.1rem;
+}
+
+main form .buttons .row #minus{
+    padding: 0.6rem 1.1rem;
+}
+
+main form .buttons .row #slash{
+    padding: 0.6rem 1.1rem;
+}
